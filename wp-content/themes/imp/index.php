@@ -1,9 +1,11 @@
 <?php get_header(); ?>
     <!-- Post -->
 <?php
+$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $postParams = [
     'posts_per_page' => 7,
-    'post_type' => ['post', 'partner']
+    'post_type' => ['post', 'partner'],
+    'paged' => get_query_var('paged')
 ];
 $posts = query_posts($postParams);
 ?>

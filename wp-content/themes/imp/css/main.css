@@ -2975,10 +2975,11 @@ ul.actions.pagination {
 }
 .pagination .button.big {
     padding: 0;
+    min-width: 100px;
 }
 .pagination .button.big a {
     border-bottom: none;
-    padding: 20px;
+    padding: 2em;
 }
 .button.big.next {
 
